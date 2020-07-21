@@ -1,0 +1,94 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-222222: #222222;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-f7f7f7: #F7F7F7;
+    --unnamed-color-6f6f6f: #6F6F6F;
+    --unnamed-color-eaeaea: #EAEAEA;
+    --unnamed-color-bfbfbf: #BFBFBF;
+
+    /* Font/text values */
+    --unnamed-font-family-microsoft-jhenghei: Microsoft JhengHei;
+    --unnamed-font-style-regular: Regular;
+    --unnamed-font-style-bold: Bold;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-32: 32px;
+    --unnamed-font-size-48: 48px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-1-4: 1.4px;
+    --unnamed-character-spacing-2-24: 2.24px;
+    --unnamed-character-spacing-3-36: 3.36px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-27: 27px;
+    --unnamed-line-spacing-42: 42px;
+    --unnamed-line-spacing-64: 64px;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-regular);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-6f6f6f);
+}
+.unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-regular);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-27);
+    letter-spacing: var(--unnamed-character-spacing-1-4);
+    color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-regular);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-27);
+    letter-spacing: var(--unnamed-character-spacing-1-4);
+    color: var(--unnamed-color-f7f7f7);
+}
+.unnamed-character-style-4 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-regular);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-42);
+    letter-spacing: var(--unnamed-character-spacing-2-24);
+    color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-5 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-regular);
+    font-size: var(--unnamed-font-size-48);
+    line-height: var(--unnamed-line-spacing-64);
+    letter-spacing: var(--unnamed-character-spacing-3-36);
+    color: var(--unnamed-color-000000);
+}
+.微軟正黑體-—-16pt_bold {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-bold);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+.微軟正黑體-—-20pt_bold {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-bold);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-27);
+    letter-spacing: var(--unnamed-character-spacing-1-4);
+    color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-6 {
+    font-family: var(--unnamed-font-family-microsoft-jhenghei);
+    font-style: var(--unnamed-font-style-bold);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-27);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-222222);
+}
