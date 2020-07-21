@@ -7,7 +7,7 @@ body {
 
 body::after {
     content: '';
-    background: url('../img/bg_home@2x.png') 0% 0% no-repeat padding-box;
+    background: url('../img/bg_home.png') 0% 0% no-repeat padding-box;
     display: block;
     position: absolute;
     width: auto;
