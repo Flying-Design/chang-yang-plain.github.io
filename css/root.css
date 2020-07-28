@@ -11,10 +11,12 @@
 
     /* Font/text values */
     --unnamed-font-family-microsoft-jhenghei: Microsoft JhengHei;
+    --unnamed-font-family-helvetica-neue: Helvetica Neue;
     --unnamed-font-style-regular: Regular;
     --unnamed-font-style-bold: Bold;
     --unnamed-font-size-16: 16px;
     --unnamed-font-size-20: 20px;
+    --unnamed-font-size-24: 24px;
     --unnamed-font-size-32: 32px;
     --unnamed-font-size-48: 48px;
     --unnamed-character-spacing-0: 0px;
@@ -23,6 +25,8 @@
     --unnamed-character-spacing-3-36: 3.36px;
     --unnamed-line-spacing-24: 24px;
     --unnamed-line-spacing-27: 27px;
+    --unnamed-line-spacing-35: 35px;
+    --unnamed-line-spacing-36: 36px;
     --unnamed-line-spacing-42: 42px;
     --unnamed-line-spacing-64: 64px;
 }

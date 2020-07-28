@@ -5,10 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>章揚印刷-公司介紹</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>章揚印刷 - 公司介紹</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/root.css"/>
     <link rel="stylesheet" type="text/css" href="css/gen_layout.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 </head>
 <body>
 <div>
@@ -20,14 +21,62 @@
         <nav>
             <ul>
                 <li><a href="about.html">公司介紹</a></li>
-                <li><a href="products.html">產品目錄</a></li>
+                <li><a href="catalog.html">產品目錄</a></li>
                 <li><a href="process.html">印製流程</a></li>
-                <li><a href="price-quote.html">線上詢價</a></li>
+                <li><a href="process.html#online-quote">線上詢價</a></li>
             </ul>
         </nav>
     </header>
+    <!-- 公司介紹重點 -->
+    <article class="company-main-content1">
+        <div class="company-motto fade-in"><img src="img/about/img_introduction_motto.png"></div>
+        <div class="company-content-gallery">
+            <div class="company-content-gallery-img"></div>
+            <div class="company-content-gallery-img"></div>
+        </div>
+    </article>
+    <article class="company-main-content2">
+        <div class="company-content-headline">用心、專注才能更專業</div>
+        <div class="company-content-history">公司於民國83年成立迄今近30年，員工大約30人。</br></br>
+            專門製作自粘性商標貼紙，近幾年進駐數台高科技自動化機器，是全台設備最齊全、</br>
+            品質最穩定、價格最有競爭力，讓客戶更省錢的貼紙印刷公司。</br></br>
+            秉持著”欺世盜名終非久，事長業久誠中求”的理念讓公司更穩定成長日益拙壯，</br>
+            是領導業界商標貼紙的製造商。
+        </div>
+    </article>
+    <!-- 成功案例 -->
     <article>
-        公司介紹-TBD
+        <div class="company-customer-headline">我們為這些客戶提供良好的服務</div>
+        <div class="company-customer-logo">
+            <ul>
+                <li><img src="img/about/logo_client_1.png"></li>
+                <li><img src="img/about/logo_client_2.png"></li>
+                <li><img src="img/about/logo_client_3.png"></li>
+                <li><img src="img/about/logo_client_4.png"></li>
+                <li><img src="img/about/logo_client_5.png"></li>
+            </ul>
+            <ul>
+                <li><img src="img/about/logo_client_6.png"></li>
+                <li><img src="img/about/logo_client_7.png"></li>
+                <li><img src="img/about/logo_client_8.png"></li>
+                <li><img src="img/about/logo_client_9.png"></li>
+                <li><img src="img/about/logo_client_10.png"></li>
+            </ul>
+            <ul>
+                <li><img src="img/about/logo_client_11.png"></li>
+                <li><img src="img/about/logo_client_12.png"></li>
+                <li><img src="img/about/logo_client_13.png"></li>
+                <li><img src="img/about/logo_client_14.png"></li>
+                <li><img src="img/about/logo_client_15.png"></li>
+            </ul>
+            <ul>
+                <li><img src="img/about/logo_client_16.png"></li>
+                <li><img src="img/about/logo_client_17.png"></li>
+                <li><img src="img/about/logo_client_18.png"></li>
+                <li><img src="img/about/logo_client_19.png"></li>
+                <li><img src="img/about/logo_client_20.png"></li>
+            </ul>
+        </div>
     </article>
     <!-- 底部資訊 -->
     <footer>
@@ -53,5 +102,135 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    .company-main-content1 {
+        position: relative;
+        display: flow-root;
+        margin: auto;
+        height: 800px;
+    }
+
+    .company-main-content1::after {
+        content: '';
+        background: url('img/about/bg_1_introduction.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .company-main-content2 {
+        position: relative;
+        display: block;
+        margin: auto;
+        height: 800px;
+        opacity: 1;
+    }
+
+    .company-main-content2::after {
+        content: '';
+        background: url('img/about/bg_2_introduction.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .company-motto {
+        clear: both;
+        margin: 26px auto auto;
+        width: 1200px;
+        height: 250px;
+
+    }
+
+    .company-content-gallery {
+        clear: both;
+        margin: 23.73px auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .company-content-gallery-img {
+        display: flex;
+        width: 500px;
+        height: 350px;
+        border: 1px solid var(--unnamed-color-ffffff);
+        background: #EBEBEB 0% 0% no-repeat padding-box;
+        border: 1px solid #FFFFFF;
+    }
+
+    .company-content-headline {
+        margin: auto auto auto 15%;
+        width: 678px;
+        height: 66px;
+        font: Regular var(--unnamed-font-size-48)/var(--unnamed-line-spacing-64) var(--unnamed-font-family-microsoft-jhenghei);
+        font-size: 48px;
+        letter-spacing: var(--unnamed-character-spacing-3-36);
+        color: var(--unnamed-color-000000);
+        text-align: left;
+        color: #000000;
+    }
+
+    .company-content-history {
+        margin: 35px auto auto 15%;
+        width: 904px;
+        height: 338px;
+        font: Regular var(--unnamed-font-size-24)/var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        font-size: 24px;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-000000);
+        text-align: left;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    .company-customer-headline {
+        margin: 95px auto auto 15%;
+        width: 734px;
+        height: 72px;
+        font: Regular var(--unnamed-font-size-48)/var(--unnamed-line-spacing-64) var(--unnamed-font-family-microsoft-jhenghei);
+        font-size: 48px;
+        letter-spacing: var(--unnamed-character-spacing-3-36);
+        color: var(--unnamed-color-000000);
+        text-align: left;
+        letter-spacing: 3.36px;
+        color: #000000;
+    }
+
+    .company-customer-logo {
+        clear: both;
+        margin: 69px auto 115px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .company-customer-logo ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .company-customer-logo li {
+        float: left;
+        margin: auto 38.5px auto;
+    }
+
+    .company-customer-logo img {
+        width: 140px;
+        height: 70px;
+    }
+</style>
 </html>
