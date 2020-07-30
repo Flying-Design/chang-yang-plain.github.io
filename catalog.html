@@ -13,7 +13,7 @@
 <body>
 <div>
     <!-- 頭部導覽 -->
-    <header>
+    <header id="top">
         <a href="index.html">
             <div id="nav-logo"></div>
         </a>
@@ -27,22 +27,22 @@
         </nav>
     </header>
     <!-- 產品目錄標題 -->
-    <article class="catalog-title-bg" id="top">
+    <article class="catalog-title-bg">
         <div class="catalog-title">產品目錄</div>
     </article>
     <article class="catalog-content">
         <!-- 產品目錄導覽 -->
-        <aside class="sidenav">
+        <aside id="sidenav" class="sidenav">
             <div class="sidenav-desc">以下皆可上膜</br>(亮膜、霧膜)</div>
             <div>
                 <ul>
                     <li class="sidenav-highlight">
                         <div><p></p></div>
-                        <a href="#normal-sticker">一般貼紙(撕得破)</a>
+                        <a href="#normal-sticker" class="scrollLink">一般貼紙(撕得破)</a>
                     </li>
-                    <li><a href="product.html?p=gloss-coated-art-paper">銅版紙</a></li>
-                    <li><a href="product.html?p=imitation-paper">模造紙</a></li>
-                    <li><a href="product.html?p=raft-paper">牛皮紙</a></li>
+                    <li><a href="product.html?p=coated-paper">銅版紙</a></li>
+                    <li><a href="product.html?p=molded-paper">模造紙</a></li>
+                    <li><a href="product.html?p=kraft-paper">牛皮紙</a></li>
                     <li><a href="product.html?p=bright-silver-foil">亮銀箔</a></li>
                     <li><a href="product.html?p=anti-silver-foil">反銀箔</a></li>
                     <li><a href="product.html?p=bright-gold-leaf">亮金箔</a></li>
@@ -51,32 +51,32 @@
                 <ul>
                     <li class="sidenav-highlight">
                         <div><p></p></div>
-                        <a href="#blend-sticker">合成貼紙(撕不破)</a>
+                        <a href="#blend-sticker" class="scrollLink">合成貼紙(撕不破)</a>
                     </li>
-                    <li><a href="#">珠光紙</a></li>
-                    <li><a href="#">ＰＰ合成</a></li>
-                    <li><a href="#">特多龍</a></li>
+                    <li><a href="product.html?p=pearl-paper">珠光紙</a></li>
+                    <li><a href="product.html?p=pp-synthesis">ＰＰ合成</a></li>
+                    <li><a href="product.html?p=tetoron">特多龍</a></li>
                 </ul>
                 <ul>
                     <li class="sidenav-highlight">
                         <div><p></p></div>
-                        <a href="#transparent-sticker">透明貼紙</a>
+                        <a href="#transparent-sticker" class="scrollLink">透明貼紙</a>
                     </li>
-                    <li><a href="#">透明龍</a></li>
-                    <li><a href="#">麗龍</a></li>
-                    <li><a href="#">透明靜電貼</a></li>
+                    <li><a href="product.html?p=transparent-dragon">透明龍</a></li>
+                    <li><a href="product.html?p=lilong">麗龍</a></li>
+                    <li><a href="product.html?p=transparent-electrostatic-stickers">透明靜電貼</a></li>
                 </ul>
                 <ul>
                     <li class="sidenav-highlight">
                         <div><p></p></div>
-                        <a href="#special-sticker">特殊貼紙</a>
+                        <a href="#special-sticker" class="scrollLink">特殊貼紙</a>
                     </li>
-                    <li><a href="#">亮銀龍</a></li>
-                    <li><a href="#">反銀龍</a></li>
-                    <li><a href="#">易碎貼紙</a></li>
-                    <li><a href="#">泰維克紙</a></li>
-                    <li><a href="#">雷射貼紙</a></li>
-                    <li><a href="#">防偽貼紙</a></li>
+                    <li><a href="product.html?p=bright-silver-dragon">亮銀龍</a></li>
+                    <li><a href="product.html?p=anti-silver-dragon">反銀龍</a></li>
+                    <li><a href="product.html?p=fragile-sticker">易碎貼紙</a></li>
+                    <li><a href="product.html?p=tavik-paper">泰維克紙</a></li>
+                    <li><a href="product.html?p=laser-stickers">雷射貼紙</a></li>
+                    <li><a href="product.html?p=anti-counterfeiting-stickers">防偽貼紙</a></li>
                 </ul>
             </div>
         </aside>
@@ -262,22 +262,50 @@
 <script lang="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script lang="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script lang="javascript">
-    mybutton = document.getElementById("back-to-top");
+    let backToTop = document.getElementById("back-to-top");
+    let sideNav = document.getElementById("sidenav");
+    let sticky = sideNav.offsetTop;
+    let maxElem = document.getElementById("transparent-sticker");
+    let stickyMax = maxElem.offsetTop;
+
     window.onscroll = function () {
-        scrollFunction()
+        scrollFunction();
+        stickyFunction();
     };
 
     function scrollFunction() {
         if (document.body.scrollTop > 256 || document.documentElement.scrollTop > 256) {
-            mybutton.style.display = "block";
+            backToTop.style.display = "block";
         } else {
-            mybutton.style.display = "none";
+            backToTop.style.display = "none";
         }
     }
 
-    mybutton.onclick = function () {
+    backToTop.onclick = function () {
         this.style.display = "none";
     }
+
+    function stickyFunction() {
+        if (window.pageYOffset - 100 > sticky) {
+            if (window.pageYOffset - 800 > stickyMax) {
+                sideNav.classList.add("sticky-max");
+            } else {
+                sideNav.classList.add("sticky");
+                sideNav.classList.remove("sticky-max");
+            }
+        } else {
+            sideNav.classList.remove("sticky");
+            sideNav.classList.remove("sticky-max");
+        }
+    }
+
+    $(document).ready(function(){
+        $( "a.scrollLink" ).click(function(event ) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        });
+
+    });
 </script>
 <style>
     body::after {
@@ -291,7 +319,7 @@
         right: 0px;
         left: 0px;
         bottom: 0px;
-        opacity: 1;
+        opacity: 0.5;
         z-index: -1;
     }
 
@@ -400,9 +428,11 @@
     }
 
     .main {
-        position: relative;
+        position: absolute;
         display: flow-root;
         padding: 0px 10px;
+        width: 800px;
+        left: 394px;
     }
 
     .main-title {
@@ -460,6 +490,20 @@
         color: var(--unnamed-color-222222);
         text-align: center;
         letter-spacing: 1.4px;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 20px;
+        width: 201px;
+        height: 725px;
+    }
+
+    .sticky-max {
+        position: fixed;
+        top: -300px;
+        width: 201px;
+        height: 725px;
     }
 </style>
 </html>
