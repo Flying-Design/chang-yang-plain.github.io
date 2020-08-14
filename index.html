@@ -37,7 +37,7 @@
             <li data-target="#intro-carousel" data-slide-to="4"></li>
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div id="slider" class="carousel-inner">
             <div class="item active">
                 <img src="img/index/company.jpg">
             </div>
@@ -216,6 +216,13 @@
 </body>
 <script lang="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script lang="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script lang="javascript">
+    $(document).ready(function(){
+        $('#slider').off('click').click(function(){
+            window.location = 'catalog.html';
+        });
+    });
+</script>
 <style>
     body::after {
         content: '';
@@ -236,6 +243,7 @@
         width: 100%;
         height: 550px;
         opacity: 1;
+        cursor: pointer;
     }
 
     #intro-carousel img {
