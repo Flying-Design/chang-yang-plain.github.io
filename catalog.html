@@ -265,8 +265,6 @@
     let backToTop = document.getElementById("back-to-top");
     let sideNav = document.getElementById("sidenav");
     let sticky = sideNav.offsetTop;
-    let maxElem = document.getElementById("transparent-sticker");
-    let stickyMax = maxElem.offsetTop;
 
     window.onscroll = function () {
         scrollFunction();
@@ -287,7 +285,7 @@
 
     function stickyFunction() {
         if (window.pageYOffset - 100 > sticky) {
-            if (window.pageYOffset - 800 > stickyMax) {
+            if (window.pageYOffset > 1800) {
                 sideNav.classList.add("sticky-max");
             } else {
                 sideNav.classList.add("sticky");
