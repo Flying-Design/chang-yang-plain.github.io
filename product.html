@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/root.css"/>
     <link rel="stylesheet" type="text/css" href="css/gen_layout.css"/>
+    <script lang="javascript" src="js/ga.js"></script>
+    <script lang="javascript" src="js/ga.js"></script>
 </head>
 <body>
 <div>
@@ -201,7 +203,7 @@
         $(".product-name").text(product.name);
         $("#product-note").text(product.note);
         $("#product-attr").html(product.attr);
-        $(".product-attr li:not(:first-child)").click(function(){
+        $(".product-attr li:not(:first-child)").click(function () {
             $(this).siblings().removeClass("select");
             if ($(this).hasClass("select")) {
                 $(this).removeClass("select")
@@ -299,7 +301,7 @@
         border-radius: 0;
     }
 
-    .carousel-indicators.carousel-indicators--thumbnails li.active{
+    .carousel-indicators.carousel-indicators--thumbnails li.active {
         background-color: transparent;
     }
 
@@ -308,7 +310,7 @@
         height: 375px !important;
     }
 
-    .product-title>div {
+    .product-title > div {
         display: inline-block;
         font: Bold var(--unnamed-font-size-32)/var(--unnamed-line-spacing-42) var(--unnamed-font-family-microsoft-jhenghei);
         color: var(--unnamed-color-000000);
@@ -316,7 +318,7 @@
         letter-spacing: 0.96px;
     }
 
-    .product-title>p {
+    .product-title > p {
         display: inline-block;
         margin-top: 10px;
         width: 469px;
@@ -387,7 +389,7 @@
         margin: 42px auto auto 101px;
     }
 
-    .purchase-button>div {
+    .purchase-button > div {
         display: inline-block;
         margin-left: 45px;
         width: 135px;
@@ -402,7 +404,7 @@
         padding-top: 11px;
     }
 
-    .purchase-button>div:hover {
+    .purchase-button > div:hover {
         background: var(--unnamed-color-6f6f6f) 0% 0% no-repeat padding-box;
         color: var(--unnamed-color-f7f7f7);
     }

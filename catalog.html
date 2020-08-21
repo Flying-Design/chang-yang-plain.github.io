@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/root.css"/>
     <link rel="stylesheet" type="text/css" href="css/gen_layout.css"/>
+    <script lang="javascript" src="js/ga.js"></script>
 </head>
 <body>
 <div>
@@ -166,7 +167,8 @@
             <div class="main-content">
                 <ul>
                     <li>
-                        <div class="main-content-img"><img src="img/product/transparent-electrostatic-stickers.jpg"/></div>
+                        <div class="main-content-img"><img src="img/product/transparent-electrostatic-stickers.jpg"/>
+                        </div>
                         <div class="main-content-label">
                             <p>透明龍</p>
                         </div>
@@ -178,7 +180,8 @@
                         </div>
                     </li>
                     <li>
-                        <div class="main-content-img"><img src="img/product/transparent-electrostatic-stickers.jpg"/></div>
+                        <div class="main-content-img"><img src="img/product/transparent-electrostatic-stickers.jpg"/>
+                        </div>
                         <div class="main-content-label">
                             <p>透明靜電貼</p>
                         </div>
@@ -297,10 +300,10 @@
         }
     }
 
-    $(document).ready(function(){
-        $( "a.scrollLink" ).click(function(event ) {
+    $(document).ready(function () {
+        $("a.scrollLink").click(function (event) {
             event.preventDefault();
-            $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+            $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top}, 500);
         });
 
     });
