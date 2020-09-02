@@ -32,8 +32,8 @@
     <article class="company-main-content1">
         <div class="company-motto fade-in"><img src="img/about/img_introduction_motto.png"></div>
         <div class="company-content-gallery">
-            <div class="company-content-gallery-img"><img src="img/about/company.jpg"/></div>
-            <div class="company-content-gallery-img"><img src="img/about/company1.jpg"/></div>
+            <div class="company-content-gallery-img"><img src="img/about/company.png"/></div>
+            <div class="company-content-gallery-img"><img src="img/about/company1.png"/></div>
         </div>
     </article>
     <article class="company-main-content2">
@@ -112,17 +112,17 @@
         position: relative;
         display: flow-root;
         margin: auto;
-        height: 800px;
+        height: 600px;
     }
 
     .company-main-content1::after {
         content: '';
-        background: url('img/about/bg_1_introduction.png') 0% 0% no-repeat padding-box;
-        background-size: cover;
+        background: url('img/about/bg_2_introduction.png') 0% 0% no-repeat padding-box;
+        /*background-size: cover;*/
         position: absolute;
         top: 0px;
         right: 0px;
-        left: 0px;
+        left: 5%;
         bottom: 0px;
         opacity: 0.3;
         z-index: -1;
@@ -132,18 +132,17 @@
         position: relative;
         display: block;
         margin: auto;
-        padding-top: 100px;
-        height: 800px;
+        height: 600px;
     }
 
     .company-main-content2::after {
         content: '';
-        background: url('img/about/bg_2_introduction.png') 0% 0% no-repeat padding-box;
-        background-size: cover;
+        background: url('img/about/bg_1_introduction.png') 0% 0% no-repeat padding-box;
+        /*background-size: cover;*/
         position: absolute;
         top: 0px;
         right: 0px;
-        left: 0px;
+        left: 5%;
         bottom: 0px;
         opacity: 0.3;
         z-index: -1;
@@ -168,13 +167,15 @@
     .company-content-gallery-img, .company-content-gallery img {
         display: flex;
         width: 500px;
-        height: 350px;
+        height: 275px;
         border: 1px solid var(--unnamed-color-ffffff);
         background: #EBEBEB 0% 0% no-repeat padding-box;
         border: 1px solid #FFFFFF;
     }
 
     .company-content-headline {
+        display: inline-block;
+        padding-top: 180px;
         margin: auto auto auto 15%;
         width: 678px;
         height: 66px;
@@ -187,6 +188,7 @@
     }
 
     .company-content-history {
+        display: inline-block;
         margin: 35px auto auto 15%;
         width: 904px;
         height: 338px;
@@ -206,7 +208,7 @@
         font: Bold var(--unnamed-font-size-48)/var(--unnamed-line-spacing-64) var(--unnamed-font-family-microsoft-jhenghei);
         font-size: 48px;
         letter-spacing: var(--unnamed-character-spacing-3-36);
-        color: var(--unnamed-color-000000);
+        color: #2C3260;
         text-align: left;
         letter-spacing: 3.36px;
         color: #000000;

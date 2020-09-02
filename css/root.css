@@ -8,11 +8,15 @@
     --unnamed-color-6f6f6f: #6F6F6F;
     --unnamed-color-eaeaea: #EAEAEA;
     --unnamed-color-bfbfbf: #BFBFBF;
+    --unnamed-color-2c3260: #2C3260;
 
     /* Font/text values */
     --unnamed-font-family-microsoft-jhenghei: Microsoft JhengHei;
     --unnamed-font-family-helvetica-neue: Helvetica Neue;
     --unnamed-font-style-regular: Regular;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-bold: bold;
     --unnamed-font-style-bold: Bold;
     --unnamed-font-size-16: 16px;
     --unnamed-font-size-20: 20px;
